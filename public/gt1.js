@@ -31,27 +31,19 @@ window.onload = function () {
     const sortButton = document.getElementById('sort-button');
     const cokeImagesContainer = document.getElementById('coke-images');
     const sortIndicator = document.getElementById('sort-indicator');
-    let isAscending = true; // Initialize the sort order
+    let isAscending = true;
 
     sortButton.addEventListener('click', () => {
         const cokeItems = Array.from(cokeImagesContainer.getElementsByClassName('coke-item'));
         cokeItems.sort((a, b) => {
-            const nameA = a.querySelector('.coke-label').textContent; // Get label text
-            const nameB = b.querySelector('.coke-label').textContent; // Get label text
+            const nameA = a.querySelector('.coke-label').textContent;
+            const nameB = b.querySelector('.coke-label').textContent;
             return isAscending ? nameB.localeCompare(nameA) : nameA.localeCompare(nameB); // Reverse logic
         });
 
         // Clear and re-append sorted items
         cokeImagesContainer.innerHTML = '';
         cokeItems.forEach(item => cokeImagesContainer.appendChild(item));
-
-        // Clear the container
-        cokeImagesContainer.innerHTML = '';
-        
-        // Add the sorted items back
-        cokeItems.forEach(item => {
-            cokeImagesContainer.appendChild(item);
-        });
         
         // Add a nice animation effect
         cokeItems.forEach((item, index) => {
