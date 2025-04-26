@@ -1,0 +1,230 @@
+/* Modern Green & White Theme for DLSL */
+:root {
+    --primary-green: #2e7d32;
+    --light-green: #4caf50;
+    --dark-green: #1b5e20;
+    --accent-green: #81c784;
+    --white: #ffffff;
+    --off-white: #f5f5f5;
+    --light-gray: #e0e0e0;
+    --dark-gray: #424242;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: var(--off-white);
+    color: var(--dark-gray);
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  .header {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    flex-wrap: wrap;
+  }
+  
+  .logo-container {
+    display: flex;
+    flex-direction: row; /* Explicitly set to row to ensure horizontal layout */
+    align-items: center;
+    gap: 0.5rem; /* Controls spacing between logo and title */
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+  
+  .school-logo {
+    width: auto;
+    height: 60px;
+    display: block; /* Prevents any extra spacing */
+    flex-shrink: 0; /* Prevent logo from shrinking */
+  }
+  
+  .header h1 {
+    color: var(--primary-green);
+    font-size: 1.5rem;
+    margin: 0; /* Remove all margins */
+    padding: 0; /* Remove all padding */
+    font-weight: 600;
+    white-space: nowrap; /* Prevents title from wrapping */
+    display: inline-block; /* Ensure it stays inline */
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  
+  .navbar a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    transition: var(--transition);
+  }
+  
+  .navbar a:hover {
+    color: var(--primary-green);
+    background-color: var(--light-gray);
+  }
+  
+  /* Container Styling */
+  .container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* Student Container */
+  .student-container {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+  }
+  
+  .student-image-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--primary-green);
+  }
+  
+  .self-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .student-container h1 {
+    color: var(--primary-green);
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+  
+  /* Coke Container */
+  .coke-container {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+  }
+  
+  #sort-indicator {
+    font-size: 1rem;
+    color: var(--dark-gray);
+    font-weight: 500;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: var(--light-gray);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: inline-block;
+    box-shadow: var(--shadow);
+  }
+  
+  #sort-button {
+    background-color: var(--primary-green);
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+  }
+  
+  #sort-button:hover {
+    background-color: var(--dark-green);
+    transform: translateY(-2px);
+  }
+  
+  #coke-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .coke-item {
+    background-color: var(--off-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+  }
+  
+  .coke-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .coke-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .coke-label {
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: 500;
+    color: var(--dark-gray);
+  }
+  
+  /* Main Content Sections */
+  main {
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
+  }
+  
+  main section {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+  }
+  
+  main h2 {
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-green);
+  }
+  
+  main p {
+    color: var(--dark-gray);
+    line-height: 1.7;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--primary-green);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }

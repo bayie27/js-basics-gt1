@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLSL w/ Exercises 1-6 & Sorting</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="gt1.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="dlsl-logo.png" alt="DLSL Logo" class="school-logo">
+            <h1>De La Salle Lipa</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="student-container">
+            <div class="student-image-container">
+                <img src="daniboy.jpg" class="self-image">
+            </div>
+            <h1>Hi, I am Daniboy!</h1>
+        </div>
+        <div class="coke-container">
+            <button id="sort-button">Sort Coke Images</button>
+            <p id="sort-indicator">Current Sort: Ascending</p>
+            <div id="coke-images">
+                <div class="coke-item">
+                    <img src="coke-1.jpg" class="coke-image" alt="Coke 1">
+                    <p class="coke-label">Coke Image no. 1</p>
+                </div>
+                <div class="coke-item">
+                    <img src="coke-2.jpg" class="coke-image" alt="Coke 2">
+                    <p class="coke-label">Coke Image no. 2</p>
+                </div>
+                <div class="coke-item">
+                    <img src="coke-3.jpg" class="coke-image" alt="Coke 3">
+                    <p class="coke-label">Coke Image no. 3</p>
+                </div>
+                <div class="coke-item">
+                    <img src="coke-4.jpg" class="coke-image" alt="Coke 4">
+                    <p class="coke-label">Coke Image no. 4</p>
+                </div>
+                <div class="coke-item">
+                    <img src="coke-5.jpg" class="coke-image" alt="Coke 5">
+                    <p class="coke-label">Coke Image no. 5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p><strong>De La Salle Lipa (DLSL)</strong>, established in 1962, is a private Catholic Lasallian institution located in Lipa City, Batangas. Guided by the mission of the De La Salle Brothers, DLSL is committed to providing quality human and Christian education to all, aiming to build a society founded on equity, justice, and sustainable development.</p>
+            <p>With a vibrant campus community of approximately 9,000 students and 700 faculty members, DLSL offers a nurturing environment that fosters academic excellence and holistic development.</p>
+            <p>Learn more about our mission and vision on our <a href="https://www.dlsl.edu.ph/page/about-dlsl/mission-vision">Mission & Vision</a> page.</p>
+        </section>
+    
+        <section id="admissions" class="admissions-section">
+            <h2>Admissions</h2>
+            <p>Embark on your Lasallian journey with our streamlined admissions process. Whether you're a prospective student for basic education or higher education, DLSL welcomes you to be part of our dynamic community.</p>
+            <h3>Application Steps:</h3>
+            <ol>
+                <li><strong>Online Application:</strong> Complete the application form through our <a href="https://my.dlsl.edu.ph/padmission">Online Admission Portal</a>.</li>
+                <li><strong>Submit Requirements:</strong> Provide necessary documents such as PSA Birth Certificate, 2x2 photo, and academic records.</li>
+                <li><strong>Interview:</strong> Participate in an interview as part of the assessment process.</li>
+                <li><strong>Recommendation:</strong> Submit an interactive recommendation form from a school official.</li>
+            </ol>
+            <p>For detailed information on program-specific requirements and scholarship opportunities, please visit our <a href="https://www.dlsl.edu.ph/page/admissions-and-scholarships/admissions">Admissions Page</a>.</p>
+        </section>
+    
+        <section id="academics" class="academics-section">
+            <h2>Academics</h2>
+            <p>At DLSL, we offer a comprehensive range of academic programs designed to equip students with the knowledge and skills needed for the modern world.</p>
+            <h3>Colleges and Programs:</h3>
+            <ul>
+                <li><a href="https://www.dlsl.edu.ph/page/our-programs/colleges/business-economics-accountancy-and-management">College of Business, Economics, Accountancy and Management</a></li>
+                <li><a href="https://www.dlsl.edu.ph/page/our-programs/colleges/information-technology-and-engineering">College of Information Technology and Engineering</a></li>
+                <li><a href="https://www.dlsl.edu.ph/page/our-programs/colleges/education-arts-and-sciences">College of Education, Arts and Sciences</a></li>
+                <li><a href="https://www.dlsl.edu.ph/page/our-programs/colleges/international-hospitality-and-tourism-management">College of International Hospitality and Tourism Management</a></li>
+                <li><a href="https://www.dlsl.edu.ph/page/our-programs/colleges/nursing">College of Nursing</a></li>
+            </ul>
+            <p>Our Integrated School provides a robust basic education curriculum, ensuring a strong foundation for lifelong learning. Explore our academic offerings in detail on our <a href="https://www.dlsl.edu.ph/page/our-programs/colleges">Colleges Page</a>.</p>
+        </section>
+    
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>We're here to assist you with any inquiries or concerns.</p>
+            <p><strong>Main Campus Address:</strong><br>
+            1962 J.P. Laurel National Highway, Lipa City, Batangas 4217, Philippines</p>
+            <p><strong>Contact Numbers:</strong><br>
+            Phone: +63 (43) 756 5555<br>
+            Admissions: (043) 302-2900 / 0939 457 2569<br>
+            Registrar: 09081410849 / 09338542581 / 09209454911 / 09758313221</p>
+            <p><strong>Email:</strong><br>
+            Admissions: <a href="mailto:admissions.office@dlsl.edu.ph">admissions.office@dlsl.edu.ph</a><br>
+            Registrar: <a href="mailto:registrar.records@dlsl.edu.ph">registrar.records@dlsl.edu.ph</a></p>
+            <p>Stay connected with us through our official <a href="https://www.facebook.com/delasallelipa/">Facebook Page</a> for the latest updates and announcements.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 De La Salle Lipa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
